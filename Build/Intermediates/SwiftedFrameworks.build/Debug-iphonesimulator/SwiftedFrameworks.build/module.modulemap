@@ -1,0 +1,6 @@
+framework module SwiftedFrameworks {
+  umbrella header "SwiftedFrameworks.h"
+
+  export *
+  module * { export * }
+}

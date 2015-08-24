@@ -1,0 +1,33 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/ben/Documents/ManagedProjects/Tools/SwiftedFrameworks/Build/Products/Debug-iphonesimulator/SwiftedFrameworks.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "SwiftedFrameworks-Swift.h",
+          'external-contents': "/Users/ben/Documents/ManagedProjects/Tools/SwiftedFrameworks/Build/Products/Debug-iphonesimulator/SwiftedFrameworks.framework/Headers/SwiftedFrameworks-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "SwiftedFrameworks.h",
+          'external-contents': "/Users/ben/Documents/ManagedProjects/Tools/SwiftedFrameworks/SwiftedFrameworks/SwiftedFrameworks.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/ben/Documents/ManagedProjects/Tools/SwiftedFrameworks/Build/Products/Debug-iphonesimulator/SwiftedFrameworks.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/ben/Documents/ManagedProjects/Tools/SwiftedFrameworks/Build/Intermediates/SwiftedFrameworks.build/Debug-iphonesimulator/SwiftedFrameworks.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}
