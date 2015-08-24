@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B52795E31B8B326000AA4B58"
-               BuildableName = "SwiftedFrameworks.framework"
-               BlueprintName = "SwiftedFrameworks"
+               BuildableName = "CommonCrypto.framework"
+               BlueprintName = "CommonCrypto"
                ReferencedContainer = "container:SwiftedFrameworks.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,8 +46,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B52795E31B8B326000AA4B58"
-            BuildableName = "SwiftedFrameworks.framework"
-            BlueprintName = "SwiftedFrameworks"
+            BuildableName = "CommonCrypto.framework"
+            BlueprintName = "CommonCrypto"
             ReferencedContainer = "container:SwiftedFrameworks.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,8 +64,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B52795E31B8B326000AA4B58"
-            BuildableName = "SwiftedFrameworks.framework"
-            BlueprintName = "SwiftedFrameworks"
+            BuildableName = "CommonCrypto.framework"
+            BlueprintName = "CommonCrypto"
             ReferencedContainer = "container:SwiftedFrameworks.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

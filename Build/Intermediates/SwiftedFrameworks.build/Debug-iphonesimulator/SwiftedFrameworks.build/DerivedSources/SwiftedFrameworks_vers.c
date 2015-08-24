@@ -1,1 +1,0 @@
- const unsigned char SwiftedFrameworksVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:SwiftedFrameworks  PROJECT:SwiftedFrameworks-1" "\n"; const double SwiftedFrameworksVersionNumber __attribute__ ((used)) = (double)1.;
