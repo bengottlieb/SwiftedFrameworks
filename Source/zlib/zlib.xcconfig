@@ -1,0 +1,11 @@
+//
+//  CommonCrypto.xcconfig
+//  PDQ
+//
+//  Created by Ben Gottlieb on 8/6/15.
+//  Copyright © 2015 Stand Alone, inc. All rights reserved.
+//
+
+MODULEMAP_FILE[sdk=iphoneos*]        = $(SRCROOT)/Source/zlib/iphoneos.modulemap
+MODULEMAP_FILE[sdk=iphonesimulator*] = $(SRCROOT)/Source/zlib/iphonesimulator.modulemap
+MODULEMAP_FILE[sdk=macosx*]          = $(SRCROOT)/Source/zlib/macosx.modulemap

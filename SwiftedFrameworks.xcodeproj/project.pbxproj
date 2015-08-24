@@ -6,7 +6,45 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		B524C7FF1B8B4FFF007D7785 /* Build All */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = B524C8001B8B4FFF007D7785 /* Build configuration list for PBXAggregateTarget "Build All" */;
+			buildPhases = (
+			);
+			dependencies = (
+				B524C8041B8B5009007D7785 /* PBXTargetDependency */,
+				B524C8061B8B5010007D7785 /* PBXTargetDependency */,
+			);
+			name = "Build All";
+			productName = "Build All";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXContainerItemProxy section */
+		B524C8031B8B5009007D7785 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B52795DB1B8B326000AA4B58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B52795E31B8B326000AA4B58;
+			remoteInfo = CommonCrypto;
+		};
+		B524C8051B8B5010007D7785 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B52795DB1B8B326000AA4B58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B524C7ED1B8B4A61007D7785;
+			remoteInfo = zlib;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		B524C7F51B8B4A61007D7785 /* zlib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = zlib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B524C7F81B8B4A8A007D7785 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B524C7F91B8B4A8A007D7785 /* iphoneos.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = iphoneos.modulemap; sourceTree = "<group>"; };
+		B524C7FA1B8B4A8A007D7785 /* iphonesimulator.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = iphonesimulator.modulemap; sourceTree = "<group>"; };
+		B524C7FB1B8B4A8A007D7785 /* macosx.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = macosx.modulemap; sourceTree = "<group>"; };
+		B524C7FC1B8B4A8A007D7785 /* zlib.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = zlib.xcconfig; sourceTree = "<group>"; };
 		B52795E41B8B326000AA4B58 /* CommonCrypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommonCrypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B52795F01B8B32D000AA4B58 /* CommonCrypto.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = CommonCrypto.xcconfig; sourceTree = "<group>"; };
 		B52795F11B8B32D000AA4B58 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -16,6 +54,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B524C7EF1B8B4A61007D7785 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B52795E01B8B326000AA4B58 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -26,9 +71,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B524C7F71B8B4A8A007D7785 /* zlib */ = {
+			isa = PBXGroup;
+			children = (
+				B524C7F81B8B4A8A007D7785 /* Info.plist */,
+				B524C7F91B8B4A8A007D7785 /* iphoneos.modulemap */,
+				B524C7FA1B8B4A8A007D7785 /* iphonesimulator.modulemap */,
+				B524C7FB1B8B4A8A007D7785 /* macosx.modulemap */,
+				B524C7FC1B8B4A8A007D7785 /* zlib.xcconfig */,
+			);
+			name = zlib;
+			path = Source/zlib;
+			sourceTree = "<group>";
+		};
 		B52795DA1B8B326000AA4B58 = {
 			isa = PBXGroup;
 			children = (
+				B524C7F71B8B4A8A007D7785 /* zlib */,
 				B52795EF1B8B32D000AA4B58 /* CommonCrypto */,
 				B52795E51B8B326000AA4B58 /* Products */,
 			);
@@ -38,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				B52795E41B8B326000AA4B58 /* CommonCrypto.framework */,
+				B524C7F51B8B4A61007D7785 /* zlib.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +118,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		B524C7F01B8B4A61007D7785 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B52795E11B8B326000AA4B58 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -68,6 +135,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		B524C7ED1B8B4A61007D7785 /* zlib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B524C7F21B8B4A61007D7785 /* Build configuration list for PBXNativeTarget "zlib" */;
+			buildPhases = (
+				B524C7EE1B8B4A61007D7785 /* Sources */,
+				B524C7EF1B8B4A61007D7785 /* Frameworks */,
+				B524C7F01B8B4A61007D7785 /* Headers */,
+				B524C7F11B8B4A61007D7785 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = zlib;
+			productName = SwiftedFrameworks;
+			productReference = B524C7F51B8B4A61007D7785 /* zlib.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		B52795E31B8B326000AA4B58 /* CommonCrypto */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B52795EC1B8B326000AA4B58 /* Build configuration list for PBXNativeTarget "CommonCrypto" */;
@@ -95,6 +180,9 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Stand Alone, Inc.";
 				TargetAttributes = {
+					B524C7FF1B8B4FFF007D7785 = {
+						CreatedOnToolsVersion = 7.0;
+					};
 					B52795E31B8B326000AA4B58 = {
 						CreatedOnToolsVersion = 7.0;
 					};
@@ -112,12 +200,21 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				B524C7FF1B8B4FFF007D7785 /* Build All */,
 				B52795E31B8B326000AA4B58 /* CommonCrypto */,
+				B524C7ED1B8B4A61007D7785 /* zlib */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B524C7F11B8B4A61007D7785 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B52795E21B8B326000AA4B58 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -128,6 +225,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B524C7EE1B8B4A61007D7785 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B52795DF1B8B326000AA4B58 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -137,7 +241,68 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		B524C8041B8B5009007D7785 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B52795E31B8B326000AA4B58 /* CommonCrypto */;
+			targetProxy = B524C8031B8B5009007D7785 /* PBXContainerItemProxy */;
+		};
+		B524C8061B8B5010007D7785 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B524C7ED1B8B4A61007D7785 /* zlib */;
+			targetProxy = B524C8051B8B5010007D7785 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		B524C7F31B8B4A61007D7785 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B524C7FC1B8B4A8A007D7785 /* zlib.xcconfig */;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Source/zlib/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.standalone.zlib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B524C7F41B8B4A61007D7785 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B524C7FC1B8B4A8A007D7785 /* zlib.xcconfig */;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Source/zlib/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.standalone.zlib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B524C8011B8B4FFF007D7785 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B524C8021B8B4FFF007D7785 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		B52795EA1B8B326000AA4B58 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -264,6 +429,23 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B524C7F21B8B4A61007D7785 /* Build configuration list for PBXNativeTarget "zlib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B524C7F31B8B4A61007D7785 /* Debug */,
+				B524C7F41B8B4A61007D7785 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B524C8001B8B4FFF007D7785 /* Build configuration list for PBXAggregateTarget "Build All" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B524C8011B8B4FFF007D7785 /* Debug */,
+				B524C8021B8B4FFF007D7785 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		B52795DE1B8B326000AA4B58 /* Build configuration list for PBXProject "SwiftedFrameworks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

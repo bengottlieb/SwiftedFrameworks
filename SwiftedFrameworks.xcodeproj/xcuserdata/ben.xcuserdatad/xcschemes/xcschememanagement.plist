@@ -4,14 +4,34 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>SwiftedFrameworks.xcscheme</key>
+		<key>Build All.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>CommonCrypto.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>zlib.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>B524C7ED1B8B4A61007D7785</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B524C7FF1B8B4FFF007D7785</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>B52795E31B8B326000AA4B58</key>
 		<dict>
 			<key>primary</key>
