@@ -1,4 +1,4 @@
-module CommonCrypto [system] {
+module zlib [system] {
 	header "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/include/zlib.h"
 	export *
 }
