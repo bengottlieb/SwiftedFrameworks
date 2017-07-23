@@ -11,10 +11,9 @@
 			isa = PBXAggregateTarget;
 			buildConfigurationList = B524C8001B8B4FFF007D7785 /* Build configuration list for PBXAggregateTarget "Build All" */;
 			buildPhases = (
+				B5B3F90D1F25521A006B7548 /* ShellScript */,
 			);
 			dependencies = (
-				B524C8041B8B5009007D7785 /* PBXTargetDependency */,
-				B524C8061B8B5010007D7785 /* PBXTargetDependency */,
 			);
 			name = "Build All";
 			productName = "Build All";
@@ -23,24 +22,9 @@
 
 /* Begin PBXBuildFile section */
 		B51246EB1B8C832E0090DC86 /* zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = B51246EA1B8C82A10090DC86 /* zlib.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		B55857541EA2B7CC0051BB57 /* zlib-mac.h in Headers */ = {isa = PBXBuildFile; fileRef = B55857521EA2B7CC0051BB57 /* zlib-mac.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B55857581EA2B7ED0051BB57 /* zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = B51246EA1B8C82A10090DC86 /* zlib.h */; settings = {ATTRIBUTES = (Private, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		B524C8031B8B5009007D7785 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B52795DB1B8B326000AA4B58 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B52795E31B8B326000AA4B58;
-			remoteInfo = CommonCrypto;
-		};
-		B524C8051B8B5010007D7785 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B52795DB1B8B326000AA4B58 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B524C7ED1B8B4A61007D7785;
-			remoteInfo = zlib;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B51246EA1B8C82A10090DC86 /* zlib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zlib.h; sourceTree = "<group>"; };
@@ -56,6 +40,13 @@
 		B52795F21B8B32D000AA4B58 /* iphoneos.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = iphoneos.modulemap; sourceTree = "<group>"; };
 		B52795F31B8B32D000AA4B58 /* iphonesimulator.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = iphonesimulator.modulemap; sourceTree = "<group>"; };
 		B52795F41B8B32D000AA4B58 /* macosx.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = macosx.modulemap; sourceTree = "<group>"; };
+		B55857501EA2B7CC0051BB57 /* zlib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = zlib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B55857521EA2B7CC0051BB57 /* zlib-mac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "zlib-mac.h"; sourceTree = "<group>"; };
+		B55857531EA2B7CC0051BB57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B586AED71EF724D900CA72CE /* CommonCrypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommonCrypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B586AED81EF724D900CA72CE /* CommonCryptoMac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CommonCryptoMac-Info.plist"; path = "/Users/ben/Documents/ManagedProjects/Frameworks/SwiftedFrameworks/Source/CommonCrypto/CommonCryptoMac-Info.plist"; sourceTree = "<absolute>"; };
+		B5B3F90C1F255080006B7548 /* BuildCommonCrypto.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = BuildCommonCrypto.sh; sourceTree = "<group>"; };
+		B5B3F90E1F255889006B7548 /* BuildZLib.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = BuildZLib.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +58,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B52795E01B8B326000AA4B58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B558574C1EA2B7CC0051BB57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B586AED11EF724D900CA72CE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -93,8 +98,11 @@
 		B52795DA1B8B326000AA4B58 = {
 			isa = PBXGroup;
 			children = (
+				B5B3F90E1F255889006B7548 /* BuildZLib.sh */,
+				B5B3F90C1F255080006B7548 /* BuildCommonCrypto.sh */,
 				B524C7F71B8B4A8A007D7785 /* zlib */,
 				B52795EF1B8B32D000AA4B58 /* CommonCrypto */,
+				B55857511EA2B7CC0051BB57 /* zlib-mac */,
 				B52795E51B8B326000AA4B58 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -104,6 +112,8 @@
 			children = (
 				B52795E41B8B326000AA4B58 /* CommonCrypto.framework */,
 				B524C7F51B8B4A61007D7785 /* zlib.framework */,
+				B55857501EA2B7CC0051BB57 /* zlib.framework */,
+				B586AED71EF724D900CA72CE /* CommonCrypto.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,6 +121,7 @@
 		B52795EF1B8B32D000AA4B58 /* CommonCrypto */ = {
 			isa = PBXGroup;
 			children = (
+				B586AED81EF724D900CA72CE /* CommonCryptoMac-Info.plist */,
 				B52795F01B8B32D000AA4B58 /* CommonCrypto.xcconfig */,
 				B52795F11B8B32D000AA4B58 /* Info.plist */,
 				B52795F21B8B32D000AA4B58 /* iphoneos.modulemap */,
@@ -119,6 +130,15 @@
 			);
 			name = CommonCrypto;
 			path = Source/CommonCrypto;
+			sourceTree = "<group>";
+		};
+		B55857511EA2B7CC0051BB57 /* zlib-mac */ = {
+			isa = PBXGroup;
+			children = (
+				B55857521EA2B7CC0051BB57 /* zlib-mac.h */,
+				B55857531EA2B7CC0051BB57 /* Info.plist */,
+			);
+			path = "zlib-mac";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +153,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B52795E11B8B326000AA4B58 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B558574D1EA2B7CC0051BB57 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B55857541EA2B7CC0051BB57 /* zlib-mac.h in Headers */,
+				B55857581EA2B7ED0051BB57 /* zlib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B586AED21EF724D900CA72CE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -178,20 +214,69 @@
 			productReference = B52795E41B8B326000AA4B58 /* CommonCrypto.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		B558574F1EA2B7CC0051BB57 /* zlib-mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B55857571EA2B7CC0051BB57 /* Build configuration list for PBXNativeTarget "zlib-mac" */;
+			buildPhases = (
+				B558574B1EA2B7CC0051BB57 /* Sources */,
+				B558574C1EA2B7CC0051BB57 /* Frameworks */,
+				B558574D1EA2B7CC0051BB57 /* Headers */,
+				B558574E1EA2B7CC0051BB57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "zlib-mac";
+			productName = "zlib-mac";
+			productReference = B55857501EA2B7CC0051BB57 /* zlib.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B586AECF1EF724D900CA72CE /* CommonCrypto-mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B586AED41EF724D900CA72CE /* Build configuration list for PBXNativeTarget "CommonCrypto-mac" */;
+			buildPhases = (
+				B586AED01EF724D900CA72CE /* Sources */,
+				B586AED11EF724D900CA72CE /* Frameworks */,
+				B586AED21EF724D900CA72CE /* Headers */,
+				B586AED31EF724D900CA72CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CommonCrypto-mac";
+			productName = SwiftedFrameworks;
+			productReference = B586AED71EF724D900CA72CE /* CommonCrypto.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		B52795DB1B8B326000AA4B58 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Stand Alone, Inc.";
 				TargetAttributes = {
+					B524C7ED1B8B4A61007D7785 = {
+						DevelopmentTeam = YY6CWUX533;
+						DevelopmentTeamName = "Stand Alone, Inc.";
+						ProvisioningStyle = Automatic;
+					};
 					B524C7FF1B8B4FFF007D7785 = {
 						CreatedOnToolsVersion = 7.0;
 					};
 					B52795E31B8B326000AA4B58 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = YY6CWUX533;
+						DevelopmentTeamName = "Stand Alone, Inc.";
+						ProvisioningStyle = Automatic;
+					};
+					B558574F1EA2B7CC0051BB57 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = YY6CWUX533;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -210,6 +295,8 @@
 				B524C7FF1B8B4FFF007D7785 /* Build All */,
 				B52795E31B8B326000AA4B58 /* CommonCrypto */,
 				B524C7ED1B8B4A61007D7785 /* zlib */,
+				B558574F1EA2B7CC0051BB57 /* zlib-mac */,
+				B586AECF1EF724D900CA72CE /* CommonCrypto-mac */,
 			);
 		};
 /* End PBXProject section */
@@ -229,7 +316,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B558574E1EA2B7CC0051BB57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B586AED31EF724D900CA72CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B5B3F90D1F25521A006B7548 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./BuildCommonCrypto.sh\n./BuildZLib.sh";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B524C7EE1B8B4A61007D7785 /* Sources */ = {
@@ -246,26 +363,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B558574B1EA2B7CC0051BB57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B586AED01EF724D900CA72CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B524C8041B8B5009007D7785 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B52795E31B8B326000AA4B58 /* CommonCrypto */;
-			targetProxy = B524C8031B8B5009007D7785 /* PBXContainerItemProxy */;
-		};
-		B524C8061B8B5010007D7785 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B524C7ED1B8B4A61007D7785 /* zlib */;
-			targetProxy = B524C8051B8B5010007D7785 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		B524C7F31B8B4A61007D7785 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B524C7FC1B8B4A8A007D7785 /* zlib.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -283,6 +402,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B524C7FC1B8B4A8A007D7785 /* zlib.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -314,17 +434,26 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -362,17 +491,26 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -403,6 +541,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B52795F01B8B32D000AA4B58 /* CommonCrypto.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -420,6 +559,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B52795F01B8B32D000AA4B58 /* CommonCrypto.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -429,6 +569,100 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.standalone.CommonCrypto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B55857551EA2B7CC0051BB57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = YY6CWUX533;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "zlib-mac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.standalone.zlib-mac";
+				PRODUCT_NAME = zlib;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B55857561EA2B7CC0051BB57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = YY6CWUX533;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "zlib-mac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.standalone.zlib-mac";
+				PRODUCT_NAME = zlib;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		B586AED51EF724D900CA72CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B52795F01B8B32D000AA4B58 /* CommonCrypto.xcconfig */;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Source/CommonCrypto/CommonCryptoMac-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.standalone.CommonCrypto;
+				PRODUCT_NAME = CommonCrypto;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B586AED61EF724D900CA72CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B52795F01B8B32D000AA4B58 /* CommonCrypto.xcconfig */;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Source/CommonCrypto/CommonCryptoMac-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.standalone.CommonCrypto;
+				PRODUCT_NAME = CommonCrypto;
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -468,6 +702,24 @@
 			buildConfigurations = (
 				B52795ED1B8B326000AA4B58 /* Debug */,
 				B52795EE1B8B326000AA4B58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B55857571EA2B7CC0051BB57 /* Build configuration list for PBXNativeTarget "zlib-mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B55857551EA2B7CC0051BB57 /* Debug */,
+				B55857561EA2B7CC0051BB57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B586AED41EF724D900CA72CE /* Build configuration list for PBXNativeTarget "CommonCrypto-mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B586AED51EF724D900CA72CE /* Debug */,
+				B586AED61EF724D900CA72CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

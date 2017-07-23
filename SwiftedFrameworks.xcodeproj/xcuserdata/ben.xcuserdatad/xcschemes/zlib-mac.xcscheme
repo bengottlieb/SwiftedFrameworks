@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B524C7FF1B8B4FFF007D7785"
-               BuildableName = "Build All"
-               BlueprintName = "Build All"
+               BlueprintIdentifier = "B558574F1EA2B7CC0051BB57"
+               BuildableName = "zlib.framework"
+               BlueprintName = "zlib-mac"
                ReferencedContainer = "container:SwiftedFrameworks.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,9 +47,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B524C7FF1B8B4FFF007D7785"
-            BuildableName = "Build All"
-            BlueprintName = "Build All"
+            BlueprintIdentifier = "B558574F1EA2B7CC0051BB57"
+            BuildableName = "zlib.framework"
+            BlueprintName = "zlib-mac"
             ReferencedContainer = "container:SwiftedFrameworks.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -65,9 +65,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B524C7FF1B8B4FFF007D7785"
-            BuildableName = "Build All"
-            BlueprintName = "Build All"
+            BlueprintIdentifier = "B558574F1EA2B7CC0051BB57"
+            BuildableName = "zlib.framework"
+            BlueprintName = "zlib-mac"
             ReferencedContainer = "container:SwiftedFrameworks.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
